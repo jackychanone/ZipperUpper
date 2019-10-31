@@ -1,5 +1,6 @@
 package datastructures.worklists;
 
+import java.util.NoSuchElementException;
 import cse332.exceptions.NotYetImplementedException;
 import cse332.interfaces.worklists.FIFOWorkList;
 
@@ -8,33 +9,69 @@ import cse332.interfaces.worklists.FIFOWorkList;
  * for method specifications.
  */
 public class ListFIFOQueue<E> extends FIFOWorkList<E> {
+    private Node front; 
+    private int size;
     
+    
+	public class Node {
+		E data;
+		Node next;
+		
+		public Node(E data) {
+			this.data = data;
+			this.next = null;
+		}
+	}
+	
     public ListFIFOQueue() {
-        throw new NotYetImplementedException();
+    	size = 0;
     }
 
     @Override
     public void add(E work) {
-        throw new NotYetImplementedException();
+    	if (!hasWork()) {
+    		front = new Node(work);
+    	}
+    	else {
+        	Node temp = front;
+        	while (temp.next != null) {
+        		temp = temp.next;
+        	}
+        	temp.next = new Node(work);
+    	}
+    	size++;
     }
 
     @Override
     public E peek() {
-        throw new NotYetImplementedException();
+    	if (!hasWork()) {
+    		throw new NoSuchElementException(); 
+    	}
+    
+    	return front.data;
     }
 
     @Override
     public E next() {
-        throw new NotYetImplementedException();
+    	if (!hasWork()) {
+    		throw new NoSuchElementException(); 
+    	}
+    	
+    	E ret = front.data;
+    	// front.next = null; 		// Garbage disposal but not necessary, bc 		
+    	front = front.next;    		// there is no means to access the previous
+    	size--;						// front.
+    	return ret;
     }
 
     @Override
     public int size() {
-        throw new NotYetImplementedException();
+        return size;
     }
 
     @Override
     public void clear() {
-        throw new NotYetImplementedException();
+    	front.next = null;
+    	size = 0;
     }
 }
