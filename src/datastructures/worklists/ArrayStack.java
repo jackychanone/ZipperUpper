@@ -1,6 +1,7 @@
 package datastructures.worklists;
 
-import cse332.exceptions.NotYetImplementedException;
+import java.util.NoSuchElementException;
+
 import cse332.interfaces.worklists.LIFOWorkList;
 
 /**
@@ -8,33 +9,54 @@ import cse332.interfaces.worklists.LIFOWorkList;
  * for method specifications.
  */
 public class ArrayStack<E> extends LIFOWorkList<E> {
-
+	private E[] array;
+	private int size;
+	
     public ArrayStack() {
-        throw new NotYetImplementedException();
+    	array = (E[]) new Object[10];
+    	size = -1; // uses 0 based indexing
     }
 
     @Override
     public void add(E work) {
-        throw new NotYetImplementedException();
+    	size++;
+    	if (array.length == size) {
+    		E[] newArray = (E[]) new Object[array.length * 2];
+    		for (int i = 0; i < array.length; i++) {
+    			newArray[i] = array[i];
+    		}
+    		array = newArray;
+    	}
+    	array[size] = work;
     }
 
     @Override
     public E peek() {
-        throw new NotYetImplementedException();
+    	if (size == -1) {
+    		throw new NoSuchElementException();
+    	}
+    	return array[size];
     }
 
     @Override
     public E next() {
-        throw new NotYetImplementedException();
+    	if (size == -1) {
+    		throw new NoSuchElementException();
+    	}
+    	E ret = array[size];
+    	array[size] = null;
+    	size--;
+        return ret;
     }
 
     @Override
     public int size() {
-        throw new NotYetImplementedException();
+        return size + 1;
     }
 
     @Override
     public void clear() {
-        throw new NotYetImplementedException();
+    	array = (E[]) new Object[10];
+    	size = -1;
     }
 }
