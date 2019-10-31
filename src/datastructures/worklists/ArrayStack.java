@@ -2,10 +2,10 @@ package datastructures.worklists;
 
 import java.util.NoSuchElementException;
 
-import cse332.interfaces.worklists.LIFOWorkList;
+import src.interfaces.worklists.LIFOWorkList;
 
 /**
- * See cse332/interfaces/worklists/LIFOWorkList.java
+ * See src/interfaces/worklists/LIFOWorkList.java
  * for method specifications.
  */
 public class ArrayStack<E> extends LIFOWorkList<E> {

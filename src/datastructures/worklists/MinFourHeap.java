@@ -1,10 +1,10 @@
 package datastructures.worklists;
 
-import cse332.interfaces.worklists.PriorityWorkList;
-import cse332.exceptions.NotYetImplementedException;
+import src.interfaces.worklists.PriorityWorkList;
+import src.exceptions.NotYetImplementedException;
 
 /**
- * See cse332/interfaces/worklists/PriorityWorkList.java
+ * See src/interfaces/worklists/PriorityWorkList.java
  * for method specifications.
  */
 public class MinFourHeap<E extends Comparable<E>> extends PriorityWorkList<E> {

@@ -1,10 +1,10 @@
 package datastructures;
 
-import cse332.exceptions.NotYetImplementedException;
-import cse332.interfaces.worklists.FIFOWorkList;
-import cse332.interfaces.worklists.FixedSizeFIFOWorkList;
-import cse332.types.ByteString;
-import datastructures.dictionaries.HashTrieMap;
+import src.dictionaries.HashTrieMap;
+import src.exceptions.NotYetImplementedException;
+import src.interfaces.worklists.FIFOWorkList;
+import src.interfaces.worklists.FixedSizeFIFOWorkList;
+import src.types.ByteString;
 
 public class SuffixTrie extends HashTrieMap<Byte, ByteString, Boolean> {
     protected static final Byte TERMINATOR = null;

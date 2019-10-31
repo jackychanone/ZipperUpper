@@ -6,8 +6,8 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-import cse332.jazzlib.ZipEntry;
-import cse332.jazzlib.ZipOutputStream;
+import src.jazzlib.ZipEntry;
+import src.jazzlib.ZipOutputStream;
 
 /*
  * The Zip program requires a working SuffixTrie implementation. If you haven't

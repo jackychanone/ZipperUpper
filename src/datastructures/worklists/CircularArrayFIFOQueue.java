@@ -1,12 +1,12 @@
 package datastructures.worklists;
 
-import cse332.exceptions.NotYetImplementedException;
+import src.exceptions.NotYetImplementedException;
 import java.util.NoSuchElementException;
 import java.lang.IndexOutOfBoundsException;
-import cse332.interfaces.worklists.FixedSizeFIFOWorkList;
+import src.interfaces.worklists.FixedSizeFIFOWorkList;
 
 /**
- * See cse332/interfaces/worklists/FixedSizeFIFOWorkList.java
+ * See src/interfaces/worklists/FixedSizeFIFOWorkList.java
  * for method specifications.
  */
 public class CircularArrayFIFOQueue<E> extends FixedSizeFIFOWorkList<E> {

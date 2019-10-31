@@ -1,7 +1,7 @@
 package tests.gitlab.duedate;
 
-import cse332.types.AlphabeticString;
-import datastructures.dictionaries.HashTrieMap;
+import src.dictionaries.HashTrieMap;
+import src.types.AlphabeticString;
 import tests.TestsUtility;
 
 import java.util.HashMap;

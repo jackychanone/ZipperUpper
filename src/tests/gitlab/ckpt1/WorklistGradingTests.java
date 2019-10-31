@@ -1,6 +1,6 @@
 package tests.gitlab.ckpt1;
 
-import cse332.interfaces.worklists.WorkList;
+import src.interfaces.worklists.WorkList;
 import tests.TestsUtility;
 
 import java.util.NoSuchElementException;

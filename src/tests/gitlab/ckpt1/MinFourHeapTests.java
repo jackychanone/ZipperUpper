@@ -1,6 +1,6 @@
 package tests.gitlab.ckpt1;
 
-import cse332.interfaces.worklists.PriorityWorkList;
+import src.interfaces.worklists.PriorityWorkList;
 import datastructures.worklists.MinFourHeap;
 
 import java.util.*;

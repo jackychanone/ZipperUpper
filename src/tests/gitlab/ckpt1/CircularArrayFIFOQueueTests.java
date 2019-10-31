@@ -1,6 +1,6 @@
 package tests.gitlab.ckpt1;
 
-import cse332.interfaces.worklists.FixedSizeFIFOWorkList;
+import src.interfaces.worklists.FixedSizeFIFOWorkList;
 import datastructures.worklists.CircularArrayFIFOQueue;
 
 public class CircularArrayFIFOQueueTests extends WorklistGradingTests {

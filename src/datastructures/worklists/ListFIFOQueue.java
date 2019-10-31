@@ -1,11 +1,11 @@
 package datastructures.worklists;
 
 import java.util.NoSuchElementException;
-import cse332.exceptions.NotYetImplementedException;
-import cse332.interfaces.worklists.FIFOWorkList;
+import src.exceptions.NotYetImplementedException;
+import src.interfaces.worklists.FIFOWorkList;
 
 /**
- * See cse332/interfaces/worklists/FIFOWorkList.java
+ * See src/interfaces/worklists/FIFOWorkList.java
  * for method specifications.
  */
 public class ListFIFOQueue<E> extends FIFOWorkList<E> {
