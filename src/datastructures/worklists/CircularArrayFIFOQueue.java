@@ -1,7 +1,9 @@
 package datastructures.worklists;
 
-import src.exceptions.NotYetImplementedException;
 import java.util.NoSuchElementException;
+
+import cse332.exceptions.NotYetImplementedException;
+
 import java.lang.IndexOutOfBoundsException;
 import src.interfaces.worklists.FixedSizeFIFOWorkList;
 

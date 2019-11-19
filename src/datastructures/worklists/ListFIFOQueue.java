@@ -1,7 +1,8 @@
 package datastructures.worklists;
 
 import java.util.NoSuchElementException;
-import src.exceptions.NotYetImplementedException;
+
+import cse332.exceptions.NotYetImplementedException;
 import src.interfaces.worklists.FIFOWorkList;
 
 /**

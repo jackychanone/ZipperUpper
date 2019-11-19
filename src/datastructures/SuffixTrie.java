@@ -1,7 +1,7 @@
 package datastructures;
 
+import cse332.exceptions.NotYetImplementedException;
 import src.dictionaries.HashTrieMap;
-import src.exceptions.NotYetImplementedException;
 import src.interfaces.worklists.FIFOWorkList;
 import src.interfaces.worklists.FixedSizeFIFOWorkList;
 import src.types.ByteString;

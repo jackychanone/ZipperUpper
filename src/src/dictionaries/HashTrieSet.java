@@ -1,6 +1,6 @@
 package src.dictionaries;
 
-import src.exceptions.NotYetImplementedException;
+import cse332.exceptions.NotYetImplementedException;
 import src.interfaces.misc.BString;
 import src.interfaces.trie.TrieSet;
 

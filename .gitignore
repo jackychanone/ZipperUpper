@@ -1,7 +1,11 @@
 bin
+bots
 
 *.class
 *.DS_Store
 *.classpath
 *.project
 *.jar
+*.txt
+*.log
+*.corpus
